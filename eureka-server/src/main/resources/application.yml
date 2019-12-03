@@ -1,0 +1,22 @@
+server:
+  port: 9527
+spring:
+  application:
+    name: eureka-server
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      # eureka 服务地址，如果是集群的话；需要指定其它集群eureka地址
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka
+    # 不注册自己(仅作为服务中心，不作为服务客户端)
+    register-with-eureka: false
+    # 不从服务中心检索注册的服务
+    fetch-registry: false
+  server:
+    # 服务失效剔除时间间隔，默认60秒
+    eviction-interval-timer-in-ms: 60000
+    # 关闭自我保护模式（默认是打开的）
+    enable-self-preservation: false

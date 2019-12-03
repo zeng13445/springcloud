@@ -1,0 +1,10 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: consumer-demo
+eureka:
+  client:
+    service-url:
+      # eureka 服务地址，如果是集群的话；需要指定其它集群eureka地址
+      defaultZone: http://127.0.0.1:9527/eureka

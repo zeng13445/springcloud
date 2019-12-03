@@ -1,0 +1,24 @@
+GET http://localhost:6061/api%20-b/consumerFeign/queryById?id=1&token=22
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-02T020537-1.404.json
+
+###
+
+GET http://localhost:6061/api%20-b/consumerFeign/queryById?id=1&token=22
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-02T020537.404.json
+
+###
+
+GET http://localhost:6061/api-b/consumerFeign/queryById?id=1&token=22
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-02T121848.200.json
+
+###
+
