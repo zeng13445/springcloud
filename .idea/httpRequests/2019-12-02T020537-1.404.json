@@ -1,7 +1,0 @@
-{
-  "timestamp": "2019-12-02T06:05:37.704+0000",
-  "status": 404,
-  "error": "Not Found",
-  "message": "No message available",
-  "path": "/api%20-b/consumerFeign/queryById"
-}
